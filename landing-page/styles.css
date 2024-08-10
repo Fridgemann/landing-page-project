@@ -7,6 +7,11 @@ html, body {
     padding: 0;
   }  
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -16,7 +21,7 @@ html, body {
 }
 
 .header {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
 }
 
@@ -30,9 +35,12 @@ a {
     font-size: 20px;
 }
 
-img {
+#top-img {
     width: 500px;
     height: 300px;
+}
+
+img {
     border-radius: 5px;
 }
 
@@ -45,6 +53,7 @@ img {
     background-color: #1F2937;
     flex-wrap: wrap;
     color: white;
+    flex-shrink: 10;
 }
 
 #top-1 {
@@ -54,7 +63,7 @@ img {
 
 #top-2 {
     font-size: 18px;
-    
+    margin: 10px;
 }
 
 .button-top {
@@ -66,4 +75,45 @@ img {
     border: none;
     padding: 10px;
     font-weight: 500;
+    transition: 0.25s background-color;
+}
+
+.button-top:hover {
+    cursor: pointer;
+    background-color:  #3881f6b2;
+    
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-sets {
+    display: flex;
+    gap: 30px;
+}
+
+.mid-imgs {
+    width: 300px;
+    height: 250px;
+}
+
+[class^="img-set"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    flex-wrap: wrap;
+    color: #666a74;
+}
+
+.mid-header {
+    margin: 20px;
+    font-size: 36px;
+    font-weight: 900;
 }
